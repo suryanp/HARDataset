@@ -6,7 +6,7 @@
 ## Load packages needed for the code
 library(gdata)
 library(data.table)
-
+options(digits=8)
 ## Load features data which contains columnn names for measured observations
 ft <- read.table("UCI HAR Dataset/features.txt")
 
@@ -107,5 +107,6 @@ tidydata <- data.frame(tidydatatable)
 colnames(tidydata) <- tidy.colnames
 
 
-write.table(tidydata, "HumanActivityRecognitionTidyData.txt",  quote = FALSE, sep=",", 
+write.table(format(tidydata, digits =6, scientific=FALSE), "HumanActivityRecognitionTidyData.txt",  quote = FALSE, sep="\t", 
             row.names = FALSE)
+
