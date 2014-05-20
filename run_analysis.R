@@ -107,4 +107,5 @@ tidydata <- data.frame(tidydatatable)
 colnames(tidydata) <- tidy.colnames
 
 
-write.csv(tidydata, file = "HumanActivityRecognitionTidyData.csv", row.names = FALSE)
+write.table(tidydata, "HumanActivityRecognitionTidyData.txt",  quote = FALSE, sep=",", 
+            row.names = FALSE)

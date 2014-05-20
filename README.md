@@ -7,7 +7,7 @@ The code can be saved and run from the working directory. The code assumes that 
 
 The code reads the data provided in the HAR data set and creates a tidy data set with average measurements and average variance of the measurements.  
 
-Once the code is run a tidy data set called "HumanActivityRecognitionTidyData.csv" is created in the working directory.
+Once the code is run a tidy data set called "HumanActivityRecognitionTidyData.txt" is created in the working directory.  Please open the text file in R or a spreadsheet tool for the ease of reading.
 
 
 
