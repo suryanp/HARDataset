@@ -12,11 +12,7 @@ The R script performs the following actions:
 
 * The test and training data are merged into one data set.
 
-* For the purpose of this analysis only following measurements are included:
-	** Body and gravity acceleration time and frequency signal
-	** Angular velocity time and frequency signal
-	** Body linear acceleration and angular velocity jerk signal;
-	** Magnitude of these three-dimensional signal
+* For the purpose of this analysis only following measurements are included: 1) body and gravity acceleration time and frequency signal, 2) angular velocity time and frequency signal, 3)body linear acceleration and angular velocity jerk signal, and 4) magnitude of these three-dimensional signal
 
 * The original data set consisted of 561 variables providing mean, standard deviation, median absolute deviation, max, min, etc from the signals.  For the purpose of this project only mean and standard deviation values are extracted. Additionally, since the subsequent steps would take the mean and average variance for each subject and activity combination, all measurements with average values for signals in a signal window sample (variables starting with "angle()") are ignored. 
 
